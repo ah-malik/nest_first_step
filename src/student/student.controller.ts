@@ -33,7 +33,7 @@ export class StudentController {
         return this.studentSerives.updateData(id,data)
     }
 
-    @Delete(':id')
+    @Delete(':ids')
     async deleteStudent(@Param("id") id:string){
         return this.studentSerives.deleteStudent(id)
     }
